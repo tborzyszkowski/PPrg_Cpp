@@ -1,5 +1,5 @@
-# Podstawy programowania w C++: 
-## Zadania
+# Podstawy programowania w C++: zmienne i warunki
+---
 
 ### Zadanie 1
 Napisz program zwracający wartość bezwzględną liczby podanej przez użytkownika.
@@ -21,3 +21,9 @@ Napisz program, który odpowiada na pytanie, czy trzy podawane liczby całkowite
 
 ### Zadanie 7
 Napisz program sprawdzający czy liczba podana przez użytkownika jest z przedziału <1,10> lub <17,21>
+
+### Uwaga
+Dla powyższych zadań: 
+- zaprojektować odpowiedni diagram blokowy
+- rozwiązać zadanie wykorzystując wyrażenia warunkowe
+- rozwiązać zadanie wykorzystując instrukcje warunkowe
