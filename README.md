@@ -1,2 +1,2 @@
-# PPrg_Cpp
-Podstawy programowania w C++
+# Podstawy programowania w C++
+
