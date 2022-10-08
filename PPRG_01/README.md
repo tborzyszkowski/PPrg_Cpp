@@ -22,6 +22,10 @@ Napisz program, który odpowiada na pytanie, czy trzy podawane liczby całkowite
 ### Zadanie 7
 Napisz program sprawdzający czy liczba podana przez użytkownika jest z przedziału <1,10> lub <17,21>
 
+### Zadanie 8
+Napisz program, który porówna dwie daty. Daty są podane za pomocą wartości trzech zmiennych: `dzien1`, `miesiac1`, `rok1` dla pierwszej daty i 
+`dzien2`, `miesiac2`, `rok2` dla drugiej daty.
+
 ### Uwaga
 Dla powyższych zadań: 
 - zaprojektować odpowiedni diagram blokowy
