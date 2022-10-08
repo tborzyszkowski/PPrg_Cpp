@@ -3,11 +3,12 @@
 
 using std::cout;
 using std::cin;
+using std::endl;
 
 int main()
 {
-	cout << 34 << '\n';
-	cout << "Hello" << '\n';
+	cout << 34 << endl;
+	cout << "Hello" << endl;
 	//I'm just trying stuff here
 
 	cout << '\n' << '\n';
@@ -32,6 +33,9 @@ int main()
 	cout << "Enter a number: ";
 	cin >> i;
 	cout << '\n' << i * 2 << '\n';
+	cout << "Enter a float: ";
+	cin >> f;
+	cout << '\n' << f * 2 << '\n';
 
 	return 0;
 }
