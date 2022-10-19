@@ -30,3 +30,20 @@
 *.exe
 *.out
 *.app
+
+# Folders
+Debug/
+Release/
+bin/
+obj/
+v16/
+
+# Other
+*.sdf
+*.opensdf
+*.tlog
+*.log
+*.vcxproj.*
+*.vcxproj
+*.suo
+*.sln
