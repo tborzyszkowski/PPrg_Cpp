@@ -3,27 +3,40 @@ using namespace std;
 
 int main()
 {
+	//int x = 0;
+	//int wynik = 0;
+
+	//cout << "x = ";
+	//cin >> x;
+
+	//if (x < 0)
+	//	wynik = -x;
+	//else
+	//	wynik = x;
+
+
+	//cout << "abs(" << x << ") = " << wynik << endl;
+
 	//
 	// Ex 1
 	//
-	int x, y;
+	//int x, y;
+	//cout << "Enter two numbers" << endl;
+	//cin >> x >> y;
 
-	cout << "Enter two numbers" << endl;
-	cin >> x >> y;
+	//cout << x << " ";
+	//if (x > y)
+	//{
+	//	cout << "is larger than ";
+	//}
+	//else
+	//{
+	//	cout << "is not larger than ";
+	//}
+	//cout << y << endl;
 
-	cout << x << " ";
-	if (x > y)
-	{
-		cout << "is larger than ";
-	}
-	else
-	{
-		cout << "is not larger than ";
-	}
-	cout << y << endl;
-
-	if (x + y > 10)
-		cout << "thanks for choosing larger numbers!" << endl;
+	//if (x + y > 10)
+	//	cout << "thanks for choosing larger numbers!" << endl;
 
 	////
 	//// Ex 2
@@ -42,7 +55,7 @@ int main()
 	////
 	//// Ex 3
 	////
-	//int a = 8;
+	//int a = 13;
 
 	//if (a == 8 || a == 10)
 	//	cout << "a jest rowne 8 lub 10";
@@ -62,17 +75,17 @@ int main()
 	////
 	//// Ex 5
 	////
-	//string owoc;
-	//cout << "Wpisz nazwe owocu: ";
-	//cin >> owoc;
+	string owoc;
+	cout << "Wpisz nazwe owocu: ";
+	cin >> owoc;
 
-	//if (owoc == "gruszka")
-	//	cout << "gruszka jest zielona";
-	//else
-	//	if (owoc == "banan")
-	//		cout << "banan jest zolty";
-	//	else
-	//		cout << "nie wiem jaki ma kolor";
+	if (owoc == "gruszka")
+		cout << "gruszka jest zielona";
+	else
+		if (owoc == "banan")
+			cout << "banan jest zolty";
+		else
+			cout << "nie wiem jaki ma kolor";
 	
 	return 0;
 }

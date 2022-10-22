@@ -24,8 +24,8 @@ int main()
 	////
 	//const int N = 10;
 
-	//int result(0);
-	//int i(0);
+	//int result = 0;
+	//int i = 0;
 
 	//while (i < N) {
 	//	result += i;
@@ -56,7 +56,7 @@ int main()
 	//float num1, num2;
 	//cout << "Enter an operator (+, -, *, /): ";
 	//cin >> oper;
-	//cout << "Enter two numbers: " << endl;
+	//cout << "Enter two numbers: ";
 	//cin >> num1 >> num2;
 
 	//switch (oper) {
@@ -106,39 +106,58 @@ int main()
 	//// przyk³ad_1: zagnie¿d¿ona pêtla
 	////
 	//int ile = 0;
+	//int licznik = 0;
 
 	//for (int i = 1; i <= 9; i++)
 	//	for (int j = 0; j <= 9; j++)
-	//		for (int k = 0; k <= 9; k++)
+	//		for (int k = 0; k <= 9; k++) {
 	//			if (i != j && i != k && j != k)
 	//			{
-	//				cout << i << j << k << " ";
+	//				//cout << i << j << k << " ";
 	//				ile++;
-	//			}
+	//			};
+	//			licznik++;
+	//		}
 
 	//cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
+	//cout << "Licznik = " << licznik << endl;
 
 	//
 	// przyk³ad_2: zagnie¿d¿ona pêtla
 	//
-	int ile = 0, i = 1, j = 0, k = 0;
+	//int ile = 0, i = 1, j = 0, k = 0, licznik = 0;
 
-	while (i <= 9) {
-		while (j <= 9) {
-			while (k <= 9) {
-				if (i != j && i != k && j != k) {
-					cout << i << j << k << " ";
-					ile++;
-				}
-				k++;
-			}
-			k = 0;
-			j++;
-		}
-		j = 0;
-		i++;
+	//while (i <= 9) {
+	//	while (j <= 9) {
+	//		while (k <= 9) {
+	//			if (i != j && i != k && j != k) {
+	//				//cout << i << j << k << " ";
+	//				ile++;
+	//			}
+	//			k++;
+	//			licznik++;
+	//		}
+	//		k = 0;
+	//		j++;
+	//	}
+	//	j = 0;
+	//	i++;
+	//}
+	//cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
+	//cout << "Licznik = " << licznik << endl;
+
+	int n = 82;
+	bool czyKwadrat = false;
+	int i = 1;
+
+	while (i < n && !czyKwadrat) {
+		if (i * i == n)
+			czyKwadrat = true;
+		else
+			i++;
 	}
-	cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
+
+	cout << "i = " << i << " " << czyKwadrat;
 
 	return 0;
 }
