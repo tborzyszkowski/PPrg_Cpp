@@ -1,4 +1,4 @@
-# Podstawy programowania w C++: Pętle
+# Podstawy programowania w C++: Funkcje
 ---
 
 ### Zadanie 
