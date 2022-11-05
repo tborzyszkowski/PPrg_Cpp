@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	const int N = 39;
+	const int N = 42;
 	long long value1 = 0, value2 = 0;
 
 	//auto function1 = sumIterative;
@@ -21,7 +21,7 @@ int main()
 	auto function1 = fibonacciIterative;
 	auto function2 = fibonacciRecursive;
 
-	for (int i = 2; i < N; i++) {
+	for (int i = 35; i < N; i++) {
 		auto begin = chrono::high_resolution_clock::now();
 		value1 = function1(i);
 		auto end = chrono::high_resolution_clock::now();

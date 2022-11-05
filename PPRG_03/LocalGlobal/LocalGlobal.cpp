@@ -22,7 +22,7 @@ int main()
 	cout << "main():programmGlobal: " << programmGlobal << endl;
 
 	// Static
-	// illegal: testStatic++;
+	//illegal: testStatic++;
 
 	test();
 }

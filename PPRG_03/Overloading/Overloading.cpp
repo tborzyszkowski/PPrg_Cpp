@@ -37,20 +37,20 @@ void display(int x)
 
 int suma(int a, int b, int c = 0, int d = 0);
 // invalid
-// int suma(int a, int b = 1, int, int d = 0);
+// int suma(int a, int b = 1, int c, int d = 0);
 
 int main()
 {
 	//cout << absolute(-5) << endl;
 	//cout << absolute(-1.23f) << endl;
-	//cout << absolute(-5.678) << endl;
+	//cout << absolute(5.678) << endl;
 
 	//display(1);
 	//display(2.5);
 	//display(1, 2);
 	//display(1, 3.0);
 	//display(2.0, 3.0);
-	//display(2, 4);
+	////display(2.1f, 4);
 
 	cout << suma(1, 2, 3, 4) << endl;
 	cout << suma(1, 2) << endl;
