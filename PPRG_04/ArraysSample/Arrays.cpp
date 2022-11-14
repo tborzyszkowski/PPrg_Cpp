@@ -78,6 +78,6 @@ void arrayProcessing() {
 
 void printArray(int oneDArray[], int numberOfColumns) {
 	for (int i = 0; i < numberOfColumns; ++i) {
-		cout << oneDArray[i] << " ";
+		cout << oneDArray[i] << "\t";
 	}
 }
