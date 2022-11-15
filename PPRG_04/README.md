@@ -11,8 +11,8 @@ Podpowiedź: Zobacz funkcję `bubbleSort` z wykładu.
 Funkcja `matrixMultiplication` realizuje mnożenie dwóch macierzy kwadratowych.
 Napisać funkcje, które implementują:
 - mnożenie macierzy o dowolnych, zgodnych wymiarach
-- pozostałem operacje: dodawanie, odejmowanie, mnożenie przez stałą
+- pozostałe operacje: dodawanie macierzy, odejmowanie macierzy, mnożenie macierzy przez stałą
 
 ### Zadanie 3
 Dla tablicy struktur `Person` z wykładu, napisać program sortujący po polu `name` 
-i (jeżeli ono nie roztrzyga) po wieku (pole `age`).
+i, jeżeli ono nie roztrzyga, po wieku (pole `age`).
