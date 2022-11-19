@@ -7,16 +7,16 @@ using namespace std;
 
 void arrayDeclaration() {
 	const int columns = 6;
-	int x[columns];
+	unsigned int x[columns];
 
-	printArray(x, columns);
+	printArrayU(x, columns);
 }
 
 void arrayInitialization() {
 	const int columns = 6;
-	int x[] = { 19, 10, 8, 17, 9, 15 };
+	//int x[] = { 19, 10, 8, 17, 9, 15 };
 	// empty members case
-	// int x[6] = { 11, 32, 53 };
+	int x[6] = { 11, 32, 53 };
 	printArray(x, columns);
 }
 
@@ -46,7 +46,7 @@ void swap(int oneDArray[], int i, int j) {
 
 void bubbleSort(int oneDArray[], int numberOfColumns) {
 	for (int i = 0; i < numberOfColumns; i++)
-		for (int j = 0; j < numberOfColumns - 1; j++)
+		for (int j = 0; j < numberOfColumns - i - 1; j++)
 			if (oneDArray[j] > oneDArray[j + 1])
 				swap(oneDArray, j, j + 1);
 }
@@ -59,7 +59,7 @@ void randomInit(int oneDArray[], int numberOfColumns, int offset, int range) {
 }
 
 void arrayProcessing() {
-	const int columns = 10;
+	const int columns = 100 * 100;
 	int x[columns];
 
 	// initialization
@@ -70,14 +70,19 @@ void arrayProcessing() {
 
 	cout << "Array sum: " << arraySum(x, columns) << endl;
 	cout << "Array max: " << arrayMax(x, columns) << endl;
-	printArray(x, columns);
+	//printArray(x, columns);
 	cout << endl;
 	bubbleSort(x, columns);
-	printArray(x, columns);
+	//printArray(x, columns);
 }
 
 void printArray(int oneDArray[], int numberOfColumns) {
 	for (int i = 0; i < numberOfColumns; ++i) {
-		cout << oneDArray[i] << "\t";
+		cout << oneDArray[i] << " ";
+	}
+}
+void printArrayU(unsigned int oneDArray[], int numberOfColumns) {
+	for (int i = 0; i < numberOfColumns; ++i) {
+		cout << oneDArray[i] << " ";
 	}
 }

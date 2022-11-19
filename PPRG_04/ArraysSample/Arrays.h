@@ -12,3 +12,4 @@ void randomInit(int oneDArray[], int numberOfColumns, int offset, int range);
 void arrayProcessing();
 
 void printArray(int array[], int numberOfColumns);
+void printArrayU(unsigned int oneDArray[], int numberOfColumns);
