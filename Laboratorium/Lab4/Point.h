@@ -8,6 +8,8 @@ struct Point
 	int x;
 	int y;
 
+	//Point(int x, int y) : x{ x }, y{ y } {};
+
 	string toString() {
 		return "{ x: " + to_string(x) + ", y: " + to_string(y)+ "}";
 	}
