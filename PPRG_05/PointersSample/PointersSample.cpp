@@ -3,6 +3,7 @@
 #include "Pointers.h"
 #include "ByReference.h"
 #include "HeapAndStack.h"
+#include "LinkedList.h"
 
 using namespace std;
 
@@ -13,7 +14,8 @@ int main()
 	//byReference();
 	//stack();
 	//heap();
-	deleteArray();
+	//deleteArray();
+	linkedListSample();
 
 	return 0;
 }

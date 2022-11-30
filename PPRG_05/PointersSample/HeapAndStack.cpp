@@ -21,7 +21,7 @@ void stack() {
 
 void heap(){
 	int *p = new int;
-	Cube *c1 = new Cube();
+	Cube* c1 = new Cube();
 	Cube* c2 = c1;
 
 	double v = c1->getVolume();
