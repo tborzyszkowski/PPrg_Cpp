@@ -53,7 +53,7 @@ Person getPersonMinAge(Person persons[], int numberOfPersons) {
 
 void arrayOfPersonsSample() {
 	const int N = 5;
-	Person persons[5];
+	Person persons[N];
 
 	fillArrayOfPersons(persons, N);
 	for (int i = 0; i < N; ++i)
