@@ -14,3 +14,7 @@ struct Node {
 
 
 void linkedListSample();
+Node* createNode(int data);
+string listToString(Node* list);
+Node* addHead(Node* list, int data);
+Node* deleteHead(Node* list);
