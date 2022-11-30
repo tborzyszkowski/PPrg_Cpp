@@ -22,6 +22,13 @@ void swap(int& n1, int& n2) {
 	n2 = temp;
 }
 
+void swap(int* n1, int* n2) {
+	int temp;
+	temp = *n1;
+	*n1 = *n2;
+	*n2 = temp;
+}
+
 void byReference() {
 	int byVal = 1;
 	int byRef = 1;
@@ -37,5 +44,7 @@ void byReference() {
 	int a = 1, b = 2;
 	cout << "a = " << a << " b = " << b << endl;
 	swap(a, b);
+	cout << "a = " << a << " b = " << b << endl;
+	swap(&a, &b);
 	cout << "a = " << a << " b = " << b << endl;
 }
