@@ -1,5 +1,5 @@
 # Podstawy programowania w C++: Tablice i Struktury
----
+
 
 ### Zadanie 1
 Napisz funkcję, która posortuje zadaną tablicę liczb metodą: 

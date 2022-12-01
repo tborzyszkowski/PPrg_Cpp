@@ -1,5 +1,5 @@
 # Podstawy programowania w C++: Pętle
----
+
 
 ### Zadanie 1
 Napisz program obliczający sumę liczb nieparzystych z przedziału <x,y>. Wartości x i y podaje użytkownik.

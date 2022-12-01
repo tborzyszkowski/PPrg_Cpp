@@ -1,5 +1,5 @@
 # Podstawy programowania w C++: Wskaźniki, list, stosy i drzewa binarne
----
+
 
 ### Zadanie 1
 Zaimplementuj listę struktur `Person`. Strukturę `Person` znajdziesz w poprzednim wykładzie.
