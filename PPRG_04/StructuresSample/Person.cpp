@@ -12,7 +12,7 @@ void simplePerson() {
 	p2.salary = 23456;
 
 	cout << "p1: " << p1.toString() << endl;
-	cout << p2.toString() << endl;
+	cout << "p1: " << p2.toString() << endl;
 }
 
 void pointersToStructure() {
@@ -26,6 +26,10 @@ void pointersToStructure() {
 
 	Person* pp1 = &p1;
 	pp1->name = "Kazik";
+	cout << "p1:  " << p1.toString() << endl;
+	cout << "pp1: " << (*pp1).toString() << endl;
+	
+	p1.name = "Zuza";
 	cout << "p1:  " << p1.toString() << endl;
 	cout << "pp1: " << (*pp1).toString() << endl;
 

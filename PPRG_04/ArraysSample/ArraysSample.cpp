@@ -14,10 +14,10 @@ int main()
 
 	// 2D
 	//array2DDeclaration();
-	matrixProcessing();
+	//matrixProcessing();
 
 	// Strings
-	//simpleStrings();
+	simpleStrings();
 
 	return 0;
 }

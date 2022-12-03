@@ -10,7 +10,7 @@ int main()
 {
 	//simplePointers();
 	//pointersToArray();
-	//byReference();
+	byReference();
 	//stack();
 	//heap();
 	//deleteArray();
