@@ -27,9 +27,9 @@ struct BinaryTree {
 		if (tree == nullptr)
 			result = "-";
 		else {
-			result += toStringPreorder(tree->left) + " " +
+			result += toStringInorder(tree->left) + " " +
 				to_string(tree->data) + " " +
-				toStringPreorder(tree->right);
+				toStringInorder(tree->right);
 		}
 		return result;
 	}
@@ -38,8 +38,8 @@ struct BinaryTree {
 		if (tree == nullptr)
 			result = "-";
 		else {
-			result += toStringPreorder(tree->left) + " " +
-				toStringPreorder(tree->right)+ " " +
+			result += toStringPostorder(tree->left) + " " +
+				toStringPostorder(tree->right)+ " " +
 				to_string(tree->data);
 		}
 		return result;
