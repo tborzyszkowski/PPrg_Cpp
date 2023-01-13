@@ -38,7 +38,5 @@ int main()
 	animal.move(1, 2);
 	cout << animal.toString() << endl;
 
-
-
 	return 0;
 }
