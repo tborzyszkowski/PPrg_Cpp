@@ -8,6 +8,5 @@ class Plant : public Organism
 		Plant();
 
 		void move(int dx, int dy);
-		string species();
 };
 

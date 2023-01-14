@@ -2,14 +2,11 @@
 
 Animal::Animal(int power, Position position) : Organism(power, position)
 {
+	setSpecies("A");
 }
 
 Animal::Animal() : Organism()
 {
 }
 
-string Animal::species()
-{
-	return "A";
-}
 

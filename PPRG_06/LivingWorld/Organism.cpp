@@ -28,7 +28,7 @@ void Organism::setPosition(Position position)
 
 string Organism::toString()
 {
-	return "{ species: " + species() + 
+	return "{ species: " + this->getSpecies() + 
 		", power: " + to_string(getPower()) + 
 		", position: " + getPosition().toString() + "}";
 }
@@ -38,7 +38,12 @@ void Organism::move(int dx, int dy)
 	position.move(getPosition().getX() + dx, getPosition().getY() + dy);
 }
 
-string Organism::species()
+string Organism::getSpecies()
 {
-	return "O";
+	return this->species;
+}
+
+void Organism::setSpecies(string spec)
+{
+	this->species = spec;
 }

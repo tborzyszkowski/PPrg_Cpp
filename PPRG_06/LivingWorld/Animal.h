@@ -9,6 +9,5 @@ class Animal : public Organism
 		Animal(int power, Position position);
 		Animal();
 
-		string species();
 };
 

@@ -3,6 +3,7 @@
 #include "Organism.h"
 #include "Plant.h"
 #include "Animal.h"
+#include "World.h"
 
 using namespace std;
 
@@ -28,15 +29,29 @@ int main()
 	//cout << org1.toString() << endl;
 
 	// Plant & Animal
-	Plant plant{ 3, p3 };
-	Animal animal{ 5, p2 };
+	//Plant plant{ 3, p3 };
+	//Animal animal{ 5, p2 };
 
-	cout << plant.toString() << endl;
-	cout << animal.toString() << endl;
-	plant.move(3, 4);
-	cout << plant.toString() << endl;
-	animal.move(1, 2);
-	cout << animal.toString() << endl;
+	//cout << plant.toString() << endl;
+	//cout << animal.toString() << endl;
+	// plant.move(3, 4);
+	//cout << plant.toString() << endl;
+	//animal.move(1, 2);
+	//cout << animal.toString() << endl;
+	
+	// World test
+	World world;
+	Position pos1{ 4, 5 };
+	Plant plantW{ 3, pos1 };
+
+	Position pos2{ 3, 2 };
+	Animal animalW{ 6, pos2 };
+
+	world.addOrganism(&plantW);
+	world.addOrganism(&animalW);
+
+	cout << world.toString() << endl;
+
 
 	return 0;
 }
