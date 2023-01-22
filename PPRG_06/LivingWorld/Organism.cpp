@@ -4,6 +4,7 @@ Organism::Organism(int power, Position position)
 {
 	setPower(power);
 	setPosition(position);
+	setSpecies("O");
 }
 
 int Organism::getPower()
@@ -35,7 +36,7 @@ string Organism::toString()
 
 void Organism::move(int dx, int dy)
 {
-	position.move(getPosition().getX() + dx, getPosition().getY() + dy);
+	position.move(dx, dy);
 }
 
 string Organism::getSpecies()

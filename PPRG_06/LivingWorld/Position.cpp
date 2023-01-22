@@ -45,8 +45,8 @@ double Position::distance(Position position)
 	return sqrt( (dx * dx) + (dy * dy) );
 }
 
-void Position::move(int newX, int newY)
+void Position::move(int dx, int dy)
 {
-	setX(newX);
-	setY(newY);
+	setX(getX() + dx);
+	setY(getY() + dy);
 }

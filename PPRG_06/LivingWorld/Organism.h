@@ -18,11 +18,11 @@ public:
 	void setPower(int power);
 	Position getPosition();
 	void setPosition(Position position);
+	string getSpecies();
+	void setSpecies(string spec);
 
 	string toString();
 
 	virtual void move(int dx, int dy);
-	string getSpecies();
-	void setSpecies(string spec);
 
 };

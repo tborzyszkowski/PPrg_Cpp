@@ -20,5 +20,5 @@ public:
 	string toString();
 
 	double distance(Position position);
-	void move(int newX, int newY);
+	void move(int dx, int dy);
 };
