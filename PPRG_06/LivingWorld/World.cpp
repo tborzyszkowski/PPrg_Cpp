@@ -1,4 +1,5 @@
 #include "World.h"
+#include <fstream>
 
 string World::getOrganismFromPosition(int x, int y)
 {	
@@ -86,6 +87,78 @@ void World::makeTurn()
 		}
 	}
 	turn++;
+}
+
+void World::writeWorld(string fileName)
+{
+	fstream my_file;
+	my_file.open(fileName, ios::out | ios::binary);
+	if (my_file.is_open()) {
+		my_file.write((char*)&this->worldX, sizeof(int));
+		my_file.write((char*)&this->worldY, sizeof(int));
+		my_file.write((char*)&this->turn, sizeof(int));
+		int orgs_size = this->organisms.size();
+		my_file.write((char*)&orgs_size, sizeof(int));
+		for (int i = 0; i < orgs_size; i++) {
+			int data;
+			data = this->organisms[i].getPower();
+			my_file.write((char*)&data, sizeof(int));
+			data = this->organisms[i].getPosition().getX();
+			my_file.write((char*)&data, sizeof(int));
+			data = this->organisms[i].getPosition().getY();
+			my_file.write((char*)&data, sizeof(int));
+			string s_data = this->organisms[i].getSpecies();
+			int s_size = s_data.size();
+			my_file.write((char*)&s_size, sizeof(int));
+			my_file.write(s_data.data(), s_data.size());
+		}
+		my_file.close();
+	}
+}
+
+void World::readWorld(string fileName)
+{
+	fstream my_file;
+	my_file.open(fileName, ios::in | ios::binary);
+	if (my_file.is_open()) {
+		int result;
+		my_file.read((char*)&result, sizeof(int));
+		this->worldX = (int)result;
+		my_file.read((char*)&result, sizeof(int));
+		this->worldY = (int)result;
+		my_file.read((char*)&result, sizeof(int));
+		this->turn = (int)result;
+		my_file.read((char*)&result, sizeof(int));
+		int orgs_size = (int)result;
+		vector<Organism> new_organisms;
+		for (int i = 0; i < orgs_size; i++) {
+			int power;
+			my_file.read((char*)&result, sizeof(int));
+			power = (int)result;
+
+			int pos_x;
+			my_file.read((char*)&result, sizeof(int));
+			pos_x = (int)result;
+			int pos_y;
+			my_file.read((char*)&result, sizeof(int));
+			pos_y = (int)result;
+			Position pos{ pos_x, pos_y };
+			
+			int s_size;
+			my_file.read((char*)&result, sizeof(int));
+			s_size = (int)result;
+
+			string species;
+			species.resize(s_size);
+			my_file.read((char*)&species[0], s_size);
+			
+			Organism org(power, pos);
+			org.setSpecies(species);
+			new_organisms.push_back(org);
+		}
+		this->organisms = new_organisms;
+		my_file.close();
+	}
 }
 
 string World::toString()
