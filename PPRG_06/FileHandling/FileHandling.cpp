@@ -35,7 +35,7 @@ int main()
 	// read from file
 	//cout << readfromFile("my_file.txt");
 
-	// append to file
+	 //append to file
 	
 	//string dane = "\nNowe dane ++++++\n";
 	//if (!appendToFile("my_file.txt", dane)) {

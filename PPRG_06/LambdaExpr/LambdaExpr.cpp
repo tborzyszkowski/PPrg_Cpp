@@ -72,23 +72,23 @@ int main()
 
 	////////////////////////
 
-	int i(1), j(2);
+	//int i(1), j(2);
 
 	// value parameters
-	auto val_lbd = [](auto x, auto y) { // x++; 
-										return (x + y) * 2; };
-	cout << val_lbd(i, j) << endl;
-	cout << "i = " << i << ", j = " << j << endl;
+	//auto val_lbd = [](auto x, auto y) { // x++; 
+	//									return (x + y) * 2; };
+	//cout << val_lbd(i, j) << endl;
+	//cout << "i = " << i << ", j = " << j << endl;
 
 	// const reference parameters
-	auto cref_lbd = [](auto const & x, auto const & y) {// x++; 
-		return (x + y) * 2; };
-	cout << cref_lbd(i, j) << endl;
-	cout << "i = " << i << ", j = " << j << endl;
+	//auto cref_lbd = [](auto const & x, auto const & y) {// x++; 
+	//	return (x + y) * 2; };
+	//cout << cref_lbd(i, j) << endl;
+	//cout << "i = " << i << ", j = " << j << endl;
 
-	// non-const reference parameters
-	auto ref_lbd = [](auto & x, auto & y) { x++; 
-		return (x + y) * 2; };
-	cout << ref_lbd(i, j) << endl;
-	cout << "i = " << i << ", j = " << j << endl;
+	//// non-const reference parameters
+	//auto ref_lbd = [](auto & x, auto & y) { x++; 
+	//	return (x + y) * 2; };
+	//cout << ref_lbd(i, j) << endl;
+	//cout << "i = " << i << ", j = " << j << endl;
 }
