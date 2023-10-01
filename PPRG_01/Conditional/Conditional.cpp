@@ -17,6 +17,39 @@ int main()
 
 	//cout << "abs(" << x << ") = " << wynik << endl;
 
+	//int x = 0;
+	//cout << "x = ";
+	//cin >> x;
+
+	//if (x == 0)
+	//	cout << "ZERO" << endl;
+	//else
+	//	if ( x % 2 == 0)
+	//		cout << "PARZ" << endl;
+	//	else
+	//		cout << "NPARZ" << endl;
+
+	int a = 0, b = 0, c = 0;
+	int min = 0;
+
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
+
+	//if (a < b)
+	//	min = a;
+	//else
+	//	min = b;
+	//if (min > c)
+	//	min = c;
+	int local;
+	//local = (a < b) ? a : b;
+	min = ((local = ((a < b) ? a : b))) > c ? c : local;
+	cout << "min = " << min << endl;
+
 	//
 	// Ex 1
 	//
@@ -75,17 +108,17 @@ int main()
 	////
 	//// Ex 5
 	////
-	string owoc;
-	cout << "Wpisz nazwe owocu: ";
-	cin >> owoc;
+	//string owoc;
+	//cout << "Wpisz nazwe owocu: ";
+	//cin >> owoc;
 
-	if (owoc == "gruszka")
-		cout << "gruszka jest zielona";
-	else
-		if (owoc == "banan")
-			cout << "banan jest zolty";
-		else
-			cout << "nie wiem jaki ma kolor";
+	//if (owoc == "gruszka")
+	//	cout << "gruszka jest zielona";
+	//else
+	//	if (owoc == "banan")
+	//		cout << "banan jest zolty";
+	//	else
+	//		cout << "nie wiem jaki ma kolor";
 	
 	return 0;
 }
