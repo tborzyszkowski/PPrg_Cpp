@@ -12,7 +12,7 @@ int main()
 
 	//int result(0);
 
-	//for (int i = 0; i < N; i++) {
+	//for (int i = 0; i < N; ++i) {
 	//	result += i;
 	//}
 
@@ -34,20 +34,37 @@ int main()
 
 	//cout << "Suma 1 .. " << N << " = " << result << endl;
 
+	//
+	// Scopes
+	//
+	//int x = 10;
+	//cout << "(1) x = " << x << endl;
+	//{
+	//	int x = 20;
+	//	cout << "(2) x = " << x << endl;
+	//}
+	//x++;
+	//cout << "(3) x = " << x << endl;
+	//if (x > 10) {
+	//	int x = 30;
+	//	cout << "(4) x = " << x << endl;
+	//}
+	//cout << "(5) x = " << x << endl;
+
 	//// Suma 1 .. N
 	//// wersja z pêtl¹ do while
 	////
-	//const int N = 10;
+	const int N = 10;
 
-	//int result(0);
-	//int i(0);
+	int result(0);
+	int i(0);
 
-	//do {
-	//	result += i;
-	//	i++;
-	//} while (i < N);
+	do {
+		result += i;
+		i++;
+	} while (i < N);
 
-	//cout << "Suma 1 .. " << N << " = " << result << endl;
+	cout << "Suma 1 .. " << N << " = " << result << endl;
 
 	////
 	//// przyk³ad_1: switch()
@@ -146,18 +163,18 @@ int main()
 	//cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
 	//cout << "Licznik = " << licznik << endl;
 
-	int n = 82;
-	bool czyKwadrat = false;
-	int i = 1;
+	//int n = 82;
+	//bool czyKwadrat = false;
+	//int i = 1;
 
-	while (i < n && !czyKwadrat) {
-		if (i * i == n)
-			czyKwadrat = true;
-		else
-			i++;
-	}
+	//while (i < n && !czyKwadrat) {
+	//	if (i * i == n)
+	//		czyKwadrat = true;
+	//	else
+	//		i++;
+	//}
 
-	cout << "i = " << i << " " << czyKwadrat;
+	//cout << "i = " << i << " " << czyKwadrat;
 
 	return 0;
 }

@@ -29,15 +29,15 @@ int main()
 	//	else
 	//		cout << "NPARZ" << endl;
 
-	int a = 0, b = 0, c = 0;
-	int min = 0;
+	//int a = 0, b = 0, c = 0;
+	//int min = 0;
 
-	cout << "a = ";
-	cin >> a;
-	cout << "b = ";
-	cin >> b;
-	cout << "c = ";
-	cin >> c;
+	//cout << "a = ";
+	//cin >> a;
+	//cout << "b = ";
+	//cin >> b;
+	//cout << "c = ";
+	//cin >> c;
 
 	//if (a < b)
 	//	min = a;
@@ -45,10 +45,10 @@ int main()
 	//	min = b;
 	//if (min > c)
 	//	min = c;
-	int local;
-	//local = (a < b) ? a : b;
-	min = ((local = ((a < b) ? a : b))) > c ? c : local;
-	cout << "min = " << min << endl;
+	//int local;
+	////local = (a < b) ? a : b;
+	//min = ((local = ((a < b) ? a : b))) > c ? c : local;
+	//cout << "min = " << min << endl;
 
 	//
 	// Ex 1
@@ -88,7 +88,7 @@ int main()
 	////
 	//// Ex 3
 	////
-	//int a = 13;
+	//int a = 10;
 
 	//if (a == 8 || a == 10)
 	//	cout << "a jest rowne 8 lub 10";
@@ -108,17 +108,17 @@ int main()
 	////
 	//// Ex 5
 	////
-	//string owoc;
-	//cout << "Wpisz nazwe owocu: ";
-	//cin >> owoc;
+	string owoc;
+	cout << "Wpisz nazwe owocu: ";
+	cin >> owoc;
 
-	//if (owoc == "gruszka")
-	//	cout << "gruszka jest zielona";
-	//else
-	//	if (owoc == "banan")
-	//		cout << "banan jest zolty";
-	//	else
-	//		cout << "nie wiem jaki ma kolor";
+	if (owoc == "gruszka")
+		cout << "gruszka jest zielona";
+	else
+		if (owoc == "banan")
+			cout << "banan jest zolty";
+		else
+			cout << "nie wiem jaki ma kolor";
 	
 	return 0;
 }
