@@ -54,17 +54,28 @@ int main()
 	//// Suma 1 .. N
 	//// wersja z pêtl¹ do while
 	////
-	const int N = 10;
+	//const int N = 10;
 
-	int result(0);
-	int i(0);
+	//int result(0);
+	//int i(0);
 
-	do {
-		result += i;
-		i++;
-	} while (i < N);
+	//do {
+	//	result += i;
+	//	i++;
+	//} while (i < N);
 
-	cout << "Suma 1 .. " << N << " = " << result << endl;
+	//cout << "Suma 1 .. " << N << " = " << result << endl;
+
+	//const int N = 5;
+
+	//for (int row = 0; row < N; row++) {
+	//	for (int col = 0; col < N; col++) {
+	//		if (col > row)
+	//			continue;
+	//		cout << "*";
+	//	}
+	//	cout << endl;
+	//}
 
 	////
 	//// przyk³ad_1: switch()
@@ -109,7 +120,7 @@ int main()
 	//case 3:
 	//case 4:
 	//case 5:
-	//	cout << "Podany dzieñ jest dniem roboczym";
+	//	cout << "Podany dzien jest dniem roboczym";
 	//	break;
 	//case 6:
 	//case 7:
@@ -163,7 +174,7 @@ int main()
 	//cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
 	//cout << "Licznik = " << licznik << endl;
 
-	//int n = 82;
+	//int n = 997;
 	//bool czyKwadrat = false;
 	//int i = 1;
 
@@ -175,6 +186,19 @@ int main()
 	//}
 
 	//cout << "i = " << i << " " << czyKwadrat;
+
+	int n = 997 * 997;
+	bool czyPierwsza = true;
+	int i = 2;
+
+	while (i < n && czyPierwsza) {
+		if (n % i == 0)
+			czyPierwsza = false;
+		else
+			i++;
+	}
+
+	cout << "i = " << i << " " << czyPierwsza;
 
 	return 0;
 }

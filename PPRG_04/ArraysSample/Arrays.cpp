@@ -7,16 +7,18 @@ using namespace std;
 
 void arrayDeclaration() {
 	const int columns = 6;
-	unsigned int x[columns];
+	int x[columns];
 
-	printArrayU(x, columns);
+	printArray(x, columns);
 }
 
 void arrayInitialization() {
 	const int columns = 6;
-	//int x[] = { 19, 10, 8, 17, 9, 15 };
+	int x[] = { 19, 10, 8, 17, 9, 15 };
 	// empty members case
-	int x[6] = { 11, 32, 53 };
+	//int x[columns] = { 11, 32, 53 };
+	for (int i = 0; i < 3; i++)
+		x[i] = i + 1;
 	printArray(x, columns);
 }
 
@@ -59,15 +61,15 @@ void randomInit(int oneDArray[], int numberOfColumns, int offset, int range) {
 }
 
 void arrayProcessing() {
-	const int columns = 100 * 100;
+	const int columns = 100 * 1000;
 	int x[columns];
 
 	// initialization
 	//for (int i = 0; i < columns; ++i)
-	//	x[i] = i + 1;
+		//x[i] = i + 1;
 	// random initialization
-	randomInit(x, columns, 0, 100);
-
+	randomInit(x, columns, 0, 1000);
+	cout << "--Afret Init--" << endl;
 	cout << "Array sum: " << arraySum(x, columns) << endl;
 	cout << "Array max: " << arrayMax(x, columns) << endl;
 	//printArray(x, columns);

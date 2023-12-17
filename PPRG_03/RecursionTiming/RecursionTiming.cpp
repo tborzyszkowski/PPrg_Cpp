@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	const int N = 42;
+	const int iteration_start = 36, iteration_end = 45;
 	long long value1 = 0, value2 = 0;
 
 	//auto function1 = sumIterative;
@@ -21,7 +21,7 @@ int main()
 	auto function1 = fibonacciIterative;
 	auto function2 = fibonacciRecursive;
 
-	for (int i = 35; i < N; i++) {
+	for (int i = iteration_start; i < iteration_end; i++) {
 		auto begin = chrono::high_resolution_clock::now();
 		value1 = function1(i);
 		auto end = chrono::high_resolution_clock::now();
@@ -29,6 +29,8 @@ int main()
 
 		cout << "Iter(" << i << ") = " << value1;
 		cout << " time: " << elapsed.count() << " s";
+
+		cout << endl;
 
 		begin = chrono::high_resolution_clock::now();
 		value2 = function2(i);
@@ -38,5 +40,7 @@ int main()
 		cout << " Rec(" << i << ") = " << value2;
 		cout << " time: " << elapsed.count() << " s" << endl;
 	}
+	cout << "Val 1: " << value1 << endl;
+	cout << "Val 2: " << value2 << endl;
 
 }

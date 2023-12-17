@@ -1,7 +1,7 @@
 long long sumIterative(int n)
 {
 	long long result = 0;
-	for (int i = 1; i < n; i++)
+	for (int i = 1; i <= n; i++)
 		result += i;
 	return result;
 }

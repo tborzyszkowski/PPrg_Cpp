@@ -37,7 +37,7 @@ void display(int x)
 
 int suma(int a, int b, int c = 0, int d = 0);
 // invalid
-// int suma(int a, int b = 1, int c, int d = 0);
+//int suma(int a, int b = 1, int c, int d = 0);
 
 int main()
 {

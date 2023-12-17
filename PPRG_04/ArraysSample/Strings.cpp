@@ -22,8 +22,7 @@ void simpleStrings() {
 	cout << "Enter str5: ";
 	// wpisz: Ala ma kota
 	cin >> str5;
-	cin.get(); // get new line
-	//cin.get(str5, 100);
+	cin.get(str5, 100);
 	cout << "You entered: " << str5 << endl;
 
 	string str6;
