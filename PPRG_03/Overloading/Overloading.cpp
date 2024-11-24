@@ -59,7 +59,7 @@ int main()
 	cout << suma(1, 2) << endl;
 	cout << suma(1, 2, 3) << endl;
 // 	cout << suma(1) << endl;
-	cout << suma_fd(1, 2, 3.3) << endl;
+	cout << suma_fd(1, 2, 3) << endl;
 //	cout << suma_fd(1, 2, d = 3.3) << endl;
 }
 
