@@ -38,12 +38,12 @@ int main()
 	//greet();
 	//greet();
 
-	//int num1 = 1;
-	//float num2 = 2.5f;
-	//displayNum(num1, num2);
-	//displayNum(33, 3.14159f);
-	//displayNum(33, 1.12345678901234567890123456789);
-	//cout << 1.12345678901234567890123456789 << endl;
+	int num1 = 1;
+	float num2 = 2.5f;
+	displayNum(num1, num2);
+	displayNum(33, 3.14159f);
+	displayNum(33, 1.12345678901234567890123456789);
+	cout << 1.12345678901234567890123456789 << endl;
 
 	//cout << add(1, 2) << endl;
 	//for (int i = 1; i < 10; i++)
@@ -51,10 +51,12 @@ int main()
 	//	cout << add(i * 10, i) << endl;
 	//}
 
-	cout << std::setprecision(20);
-	cout << absolute(-7) << endl;
-	cout << absolute(-7.12345678901234567890f) << endl;
-	cout << absolute(-7.12345678901234567890) << endl;
+	//cout << std::setprecision(20);
+	//cout << absolute(-7) << endl;
+	//float fff = -7.12345678901234567890f;
+	//double ddd = -7.12345678901234567890;
+	//cout << "absolute(" << fff << ") = " << absolute(fff) << endl;
+	//cout << "absolute(" << ddd << ") = " << absolute(ddd) << endl;
 
 	//cout << mult(6, 7) << endl;
 	//cout << add(mult(2, 3), add(4, 5)) << endl;

@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	const int iteration_start = 36, iteration_end = 45;
+	const int iteration_start = 40, iteration_end = 51;
 	long long value1 = 0, value2 = 0;
 
 	//auto function1 = sumIterative;

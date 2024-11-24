@@ -36,6 +36,9 @@ void display(int x)
 }
 
 int suma(int a, int b, int c = 0, int d = 0);
+
+int suma_fd(int a, int b, float c = 0, double d = 0);
+
 // invalid
 //int suma(int a, int b = 1, int c, int d = 0);
 
@@ -55,10 +58,18 @@ int main()
 	cout << suma(1, 2, 3, 4) << endl;
 	cout << suma(1, 2) << endl;
 	cout << suma(1, 2, 3) << endl;
-
+// 	cout << suma(1) << endl;
+	cout << suma_fd(1, 2, 3.3) << endl;
+//	cout << suma_fd(1, 2, d = 3.3) << endl;
 }
 
 int suma(int a, int b, int c, int d) 
 {
 	return a + b + c + d;
 }
+
+int suma_fd(int a, int b, float c, double d)
+{
+	return a + b + c + d;
+}
+

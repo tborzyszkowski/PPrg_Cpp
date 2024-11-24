@@ -77,17 +77,17 @@ int main()
 	//	cout << endl;
 	//}
 
-	////
-	//// przyk³ad_1: switch()
-	////
-	//char oper;
+	//
+	// przyk³ad_1: switch()
+	//
+	//char arithmetic_operator;
 	//float num1, num2;
 	//cout << "Enter an operator (+, -, *, /): ";
-	//cin >> oper;
+	//cin >> arithmetic_operator;
 	//cout << "Enter two numbers: ";
 	//cin >> num1 >> num2;
 
-	//switch (oper) {
+	//switch (arithmetic_operator) {
 	//case '+':
 	//	cout << num1 << " + " << num2 << " = " << num1 + num2;
 	//	break;
@@ -141,9 +141,13 @@ int main()
 	//		for (int k = 0; k <= 9; k++) {
 	//			if (i != j && i != k && j != k)
 	//			{
-	//				//cout << i << j << k << " ";
+	//				//cout << i << j << k << endl;
 	//				ile++;
-	//			};
+	//			}
+	//			else
+	//			{
+	//				//cout << i << j << k << endl;
+	//			}
 	//			licznik++;
 	//		}
 
@@ -174,20 +178,23 @@ int main()
 	//cout << "Liczb trzycyfrowych o niepowtarzaj¹cych siê cyfrach jest: " << ile << endl;
 	//cout << "Licznik = " << licznik << endl;
 
-	//int n = 997;
+	//int n = 1000 * 1000;
 	//bool czyKwadrat = false;
 	//int i = 1;
+	//int count = 0;
 
-	//while (i < n && !czyKwadrat) {
+	//while (i * i <= n && !czyKwadrat) {
 	//	if (i * i == n)
 	//		czyKwadrat = true;
 	//	else
 	//		i++;
+	//	count++;
 	//}
 
-	//cout << "i = " << i << " " << czyKwadrat;
+	//cout << "i = " << i << " " << czyKwadrat << endl;
+	//cout << "count = " << count << endl;
 
-	int n = 997 * 997;
+int n = 997;// *997;
 	bool czyPierwsza = true;
 	int i = 2;
 
@@ -200,6 +207,6 @@ int main()
 
 	cout << "i = " << i << " " << czyPierwsza;
 
-	return 0;
+	//return 0;
 }
 

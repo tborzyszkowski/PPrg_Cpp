@@ -11,8 +11,12 @@ void simplePerson() {
 	p2.age = 30;
 	p2.salary = 23456;
 
+	Person p3 = p2;
+	p3.age++;
+
 	cout << "p1: " << p1.toString() << endl;
-	cout << "p1: " << p2.toString() << endl;
+	cout << "p2: " << p2.toString() << endl;
+	cout << "p3: " << p3.toString() << endl;
 }
 
 void pointersToStructure() {
