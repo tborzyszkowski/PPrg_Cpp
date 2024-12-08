@@ -17,7 +17,7 @@ void arrayInitialization() {
 	int x[] = { 19, 10, 8, 17, 9, 15 };
 	// empty members case
 	//int x[columns] = { 11, 32, 53 };
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < columns; i++)
 		x[i] = i + 1;
 	printArray(x, columns);
 }
