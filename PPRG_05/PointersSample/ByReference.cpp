@@ -15,7 +15,7 @@ void functionByReference(int &num) {
 	num++;
 	cout << "By reference: in function: after change: " << num << endl;
 }
-void swap(int& n1, int& n2) {
+void swap(int &n1, int &n2) {
 	int temp;
 	temp = n1;
 	n1 = n2;
@@ -27,6 +27,7 @@ void swap(int* n1, int* n2) {
 	temp = *n1;
 	*n1 = *n2;
 	*n2 = temp;
+	//n2 = n2 + 1;
 }
 
 void byReference() {

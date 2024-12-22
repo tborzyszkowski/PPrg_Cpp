@@ -9,6 +9,11 @@ void simplePointers() {
 	// declare pointer variable
 	int* pointVar;
 
+	/*int* tmp = nullptr;
+	cout << "NULL   : " << NULL;
+	cout << "nullptr: " << tmp;*/
+
+	
 	// store address of var
 	pointVar = &var;
 

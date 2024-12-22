@@ -4,6 +4,7 @@
 using namespace std;
 
 void simplePerson() {
+	Person p0;
 	Person p1{ "Jan", 35, 12345 };
 
 	Person p2;
@@ -13,7 +14,7 @@ void simplePerson() {
 
 	Person p3 = p2;
 	p3.age++;
-
+	cout << "p0: " << p0.toString() << endl;
 	cout << "p1: " << p1.toString() << endl;
 	cout << "p2: " << p2.toString() << endl;
 	cout << "p3: " << p3.toString() << endl;
@@ -65,7 +66,7 @@ void arrayOfPersonsSample() {
 
 	fillArrayOfPersons(persons, N);
 	for (int i = 0; i < N; ++i)
-		cout << persons[i].toString() << endl;
+		cout << "[" << i << "] = " << persons[i].toString() << endl;
 
 	cout << "Min: " << getPersonMinAge(persons, N).toString() << endl;
 }
